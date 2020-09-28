@@ -1,0 +1,21 @@
+MOV_MEM 0x0
+MOV_TO ecx
+
+MOV_L 0x4
+MOV_TO ebx
+
+MOV_REG ecx
+TEST_R eax
+JZ_R 0x20
+MOV_T ebx
+ADD_TO edx
+MOV_L 0x4
+ADD_TO ebx
+MOV_L 0x1
+SUB_TO ecx
+
+MOV_L 0x2C
+SUB_TO eip
+
+HALT _
+
